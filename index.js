@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let data = await fetch(url)
         let response = await data.json()
         for (let i = 0; i < response.length; i++) {
-         products.innerHTML +=`
+            products.innerHTML += `
          <div class="product">
                     <img src="${response[i].image}" alt="${response[i].image}">
          
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
          `
-            
+
         }
     }
- 
-   fetchProducts('db.json')
-        
-                
-    
+
+    fetchProducts('db.json')
+
+
+
 })
